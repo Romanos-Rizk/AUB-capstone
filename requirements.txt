@@ -1,0 +1,6 @@
+seaborn
+plotly
+matplotlib.pyplot
+ast
+re
+squarify
