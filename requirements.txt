@@ -1,6 +1,7 @@
+pandas
+matplotlib
 seaborn
-plotly
-matplotlib.pyplot
-ast
-re
 squarify
+streamlit
+mlxtend
+Pillow
