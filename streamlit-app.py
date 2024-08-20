@@ -44,7 +44,7 @@ def login_page():
         """
         <style>
         .centered-content {
-            padding-top: 150px;  /* Adjust this value to control the amount of white space at the top */
+            padding-top: 100px;  /* Adjust this value to control the amount of white space at the top */
         }
         </style>
         """,
@@ -301,7 +301,7 @@ def upload_page():
 def home_page():
     # Main Title
     st.markdown(
-        "<h1 style='font-size:40px; text-align: center; color:#007bff;'>AUB x Malia Market Basket Analysis Application</h1>",
+        "<h1 style='font-size:35px; text-align: center; color:#007bff;'>AUB x Malia Market Basket Analysis Application</h1>",
         unsafe_allow_html=True
     )
 
@@ -309,11 +309,11 @@ def home_page():
     st.markdown("""
     <div style="background-color:#f9f9f9; padding:20px; border-radius:10px; margin-bottom:20px;">
         <h2 style='color:#007bff;'>Key Features</h2>
-        <p style="font-size:20px; line-height:1.6;">
+        <p style="font-size:15px; line-height:1.6;">
             This application provides an interactive interface for performing market basket analysis using the <strong>Apriori</strong> and <strong>FP-Growth</strong> algorithms. 
             It helps you uncover hidden patterns in customer purchases, enabling better product placement, promotions, and inventory management.
         </p>
-        <ul style="font-size:20px; line-height:1.6;">
+        <ul style="font-size:15px; line-height:1.6;">
             <li><strong>Data Exploration:</strong> Get an overview of your transaction data with comprehensive Exploratory Data Analysis (EDA).</li>
             <li><strong>Model Building:</strong> Generate association rules using Apriori and FP-Growth models.</li>
             <li><strong>Insights and Recommendations:</strong> Analyze the generated rules and gain actionable business insights.</li>
@@ -325,15 +325,15 @@ def home_page():
     st.markdown("""
     <div style="background-color:#f0f8ff; padding:20px; border-radius:10px; margin-bottom:20px;">
         <h2 style='color:#007bff;'>How to Use</h2>
-        <p style="font-size:20px; line-height:1.6;">
+        <p style="font-size:15px; line-height:1.6;">
             Follow these steps to utilize the application:
         </p>
-        <ol style="font-size:20px; line-height:1.6;">
+        <ol style="font-size:15px; line-height:1.6;">
             <li><strong>Data Page:</strong> Explore and understand your transaction data.</li>
             <li><strong>Model Configuration:</strong> Set parameters and build your models.</li>
             <li><strong>Results and Insights:</strong> View and analyze the generated rules and insights.</li>
         </ol>
-        <p style="font-size:20px;">
+        <p style="font-size:15px;">
             We hope you find this application valuable for uncovering meaningful insights from your sales data. For further assistance, please refer to the documentation or contact support.
         </p>
     </div>
@@ -343,10 +343,10 @@ def home_page():
     st.markdown("""
     <div style="background-color:#f9f9f9; padding:20px; border-radius:10px; margin-bottom:20px;">
         <h2 style='color:#007bff;'>Additional Resources</h2>
-        <p style="font-size:20px; line-height:1.6;">
+        <p style="font-size:15px; line-height:1.6;">
             For more information on market basket analysis, visit:
         </p>
-        <ul style="font-size:20px; line-height:1.6;">
+        <ul style="font-size:15px; line-height:1.6;">
             <li><a href="https://en.wikipedia.org/wiki/Market_basket_analysis" target="_blank">Market Basket Analysis - Wikipedia</a></li>
             <li><a href="https://en.wikipedia.org/wiki/Association_rule_learning" target="_blank">Association Rule Learning - Wikipedia</a></li>
         </ul>
@@ -355,7 +355,7 @@ def home_page():
 
     # Footer Section
     st.markdown("""
-    <div style="font-size:16px; color:gray; text-align:right; margin-top:30px;">
+    <div style="font-size:12px; color:gray; text-align:right; margin-top:30px;">
         <p>To Malia Group, By AUB Students</p>
     </div>
     """, unsafe_allow_html=True)
@@ -367,14 +367,14 @@ def home_page():
 def data_overview_page():
     # Main Title
     st.markdown(
-        "<h1 style='font-size:40px; text-align: center; color:#007bff;'>Data Overview</h1>",
+        "<h1 style='font-size:35px; text-align: center; color:#007bff;'>Data Overview</h1>",
         unsafe_allow_html=True
     )
 
 
     # Display introduction and dataset description with larger text
     st.markdown("""
-    <div style="font-size:24px;">
+    <div style="font-size:20px;">
         This page provides a detailed overview of the e-commerce order transactions data used in the Market Basket Analysis application. 
         It includes information about orders, products, pricing, and quantities that are essential for uncovering patterns in customer purchasing behavior.
         Below are some key statistics about the dataset:
@@ -402,24 +402,24 @@ def data_overview_page():
     with col1:
         st.markdown(f"""
         <div style="text-align: center; padding: 20px; margin: 10px; background-color: #f0f8ff; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);">
-            <h1 style="font-size: 48px; color: #007bff;">{num_rows}</h1>
-            <p style="font-size: 18px;">Total Rows</p>
+            <h1 style="font-size: 40px; color: #007bff;">{num_rows}</h1>
+            <p style="font-size: 15px;">Total Rows</p>
         </div>
         """, unsafe_allow_html=True)
 
     with col2:
         st.markdown(f"""
         <div style="text-align: center; padding: 20px; margin: 10px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);">
-            <h1 style="font-size: 48px; color: #007bff;">{num_columns}</h1>
-            <p style="font-size: 18px;">Total Columns</p>
+            <h1 style="font-size: 40px; color: #007bff;">{num_columns}</h1>
+            <p style="font-size: 15px;">Total Columns</p>
         </div>
         """, unsafe_allow_html=True)
 
     with col3:
         st.markdown(f"""
         <div style="text-align: center; padding: 20px; margin: 10px; background-color: #f0f8ff; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);">
-            <h1 style="font-size: 48px; color: #007bff;">{num_orders}</h1>
-            <p style="font-size: 18px;">Total Orders</p>
+            <h1 style="font-size: 40px; color: #007bff;">{num_orders}</h1>
+            <p style="font-size: 15px;">Total Orders</p>
         </div>
         """, unsafe_allow_html=True)
 
@@ -429,24 +429,24 @@ def data_overview_page():
     with col4:
         st.markdown(f"""
         <div style="text-align: center; padding: 20px; margin: 10px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);">
-            <h1 style="font-size: 48px; color: #007bff;">{num_unique_items}</h1>
-            <p style="font-size: 18px;">Unique Items</p>
+            <h1 style="font-size: 40px; color: #007bff;">{num_unique_items}</h1>
+            <p style="font-size: 15px;">Unique Items</p>
         </div>
         """, unsafe_allow_html=True)
 
     with col5:
         st.markdown(f"""
         <div style="text-align: center; padding: 20px; margin: 10px; background-color: #f0f8ff; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);">
-            <h1 style="font-size: 48px; color: #007bff;">${total_revenue:,.2f}</h1>
-            <p style="font-size: 18px;">Total Revenue</p>
+            <h1 style="font-size: 40px; color: #007bff;">${total_revenue:,.2f}</h1>
+            <p style="font-size: 15px;">Total Revenue</p>
         </div>
         """, unsafe_allow_html=True)
 
     with col6:
         st.markdown(f"""
         <div style="text-align: center; padding: 20px; margin: 10px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);">
-            <h1 style="font-size: 48px; color: #007bff;">${avg_basket_value:.2f}</h1>
-            <p style="font-size: 18px;">Avg Basket Value</p>
+            <h1 style="font-size: 40px; color: #007bff;">${avg_basket_value:.2f}</h1>
+            <p style="font-size: 15px;">Avg Basket Value</p>
         </div>
         """, unsafe_allow_html=True)
 
@@ -456,24 +456,24 @@ def data_overview_page():
     with col7:
         st.markdown(f"""
         <div style="text-align: center; padding: 20px; margin: 10px; background-color: #f0f8ff; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);">
-            <h1 style="font-size: 48px; color: #007bff;">{avg_discount:.2f}%</h1>
-            <p style="font-size: 18px;">Avg Discount</p>
+            <h1 style="font-size: 40px; color: #007bff;">{avg_discount:.2f}%</h1>
+            <p style="font-size: 15px;">Avg Discount</p>
         </div>
         """, unsafe_allow_html=True)
 
     with col8:
         st.markdown(f"""
         <div style="text-align: center; padding: 20px; margin: 10px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);">
-            <h1 style="font-size: 48px; color: #007bff;">{top_product_category}</h1>
-            <p style="font-size: 18px;">Top Product Category</p>
+            <h1 style="font-size: 40px; color: #007bff;">{top_product_category}</h1>
+            <p style="font-size: 15px;">Top Product Category</p>
         </div>
         """, unsafe_allow_html=True)
 
     with col9:
         st.markdown(f"""
         <div style="text-align: center; padding: 20px; margin: 10px; background-color: #f0f8ff; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);">
-            <h1 style="font-size: 48px; color: #007bff;">{avg_items_per_transaction:.2f}</h1>
-            <p style="font-size: 18px;">Avg Items per Transaction</p>
+            <h1 style="font-size: 40px; color: #007bff;">{avg_items_per_transaction:.2f}</h1>
+            <p style="font-size: 15px;">Avg Items per Transaction</p>
         </div>
         """, unsafe_allow_html=True)
 
@@ -495,7 +495,7 @@ def eda_page():
         st.markdown("""
         <div style="background-color: #f0f8ff; padding: 20px; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);">
             <h2 style="text-align: center;">Sales Analysis Dashboard</h2>
-            <p style="font-size:18px; line-height:1.6;">
+            <p style="font-size:15px; line-height:1.6;">
             The Sales Analysis Dashboard provides a comprehensive overview of sales performance across various metrics, 
             including revenue distribution, customer purchasing behaviors, and monthly sales trends. By analyzing the visualizations, you can identify the most 
             significant product categories, understand the distribution of order quantities, and explore the monetary distribution of transactions.
@@ -611,7 +611,7 @@ def eda_page():
         st.markdown("""
         <div style='background-color: #f0f8ff; padding: 20px; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);'>
             <h2 style="text-align: center;">Order Analysis Dashboard</h2>
-            <p style="font-size:18px; line-height:1.6;">
+            <p style="font-size:15px; line-height:1.6;">
             The Order Analysis Dashboard provides detailed insights into order frequency, quantity distributions, and customer behavior patterns. 
             The visualizations below will help identify recency distributions, statistics about order quantities, and how many items are typically included in each order.
             </p>
@@ -689,7 +689,7 @@ def eda_page():
         st.markdown("""
         <div style='background-color: #f0f8ff; padding: 20px; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);'>
             <h2 style="text-align: center;">Pricing and Discount Analysis Dashboard</h2>
-            <p style="font-size:18px; line-height:1.6;">
+            <p style="font-size:15px; line-height:1.6;">
             This dashboard focuses on analyzing the pricing strategies and discount applications across different products and categories. 
             Explore the distribution of selling and list prices, the impact of discounts on sales, and how discounts vary across product categories and popularity.
             </p>
@@ -813,7 +813,7 @@ def eda_page():
         st.markdown("""
         <div style='background-color: #f0f8ff; padding: 20px; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);'>
             <h2 style="text-align: center;">Supply Chain Analysis Dashboard</h2>
-            <p style="font-size:18px; line-height:1.6;">
+            <p style="font-size:15px; line-height:1.6;">
             The Supply Chain Analysis Dashboard provides insights into the distribution activities and supply chain efficiency. 
             Explore the top-performing distributors, shipment quantities, and their relative contributions to the supply chain.
             </p>
@@ -989,7 +989,7 @@ def run_model(df, model_choice, min_support, min_confidence, min_lift):
 def model_config_page():
 
     st.markdown(
-        "<h1 style='font-size:40px; text-align: center; color:#007bff;'>Market Basket Analysis</h1>",
+        "<h1 style='font-size:35px; text-align: center; color:#007bff;'>Market Basket Analysis</h1>",
         unsafe_allow_html=True
     )
 
@@ -997,7 +997,7 @@ def model_config_page():
     # Introduction and explanation in a container
     st.markdown("""
     <div style='background-color: #f0f8ff; padding: 20px; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); margin-bottom: 30px;'>
-        <p style="font-size:18px; line-height:1.6;">
+        <p style="font-size:15px; line-height:1.6;">
         Market Basket Analysis is a technique used to identify associations or relationships between products. 
         It uses two primary algorithms: <strong>Apriori</strong> and <strong>FP-Growth</strong>.
         </p>
@@ -1063,7 +1063,7 @@ def model_insights_page():
     st.markdown("""
     <div style='background-color: #f0f8ff; padding: 20px; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);'>
         <h2 style="text-align: center;">Results and Visualizations</h2>
-        <p style="font-size:18px; line-height:1.6; text-align: center;">
+        <p style="font-size:15px; line-height:1.6; text-align: center;">
             Explore the results of the Market Basket Analysis. Visualize key association rules and filter them by antecedents.
             Additionally, examine the distribution of support, confidence, and lift for a deeper understanding of the generated rules.
         </p>
@@ -1099,7 +1099,7 @@ def model_insights_page():
         
         with col2:
             st.markdown("""
-            <div style='font-size:18px;'>
+            <div style='font-size:15px;'>
                 <br>The scatter plot visualizes the association rules with the x-axis representing the support, and the y-axis representing the confidence of each rule.
                 The size and color of the points represent the lift of the rule.
                 <br><br>Use this plot to identify significant association rules that can help in better decision-making and marketing strategies.
