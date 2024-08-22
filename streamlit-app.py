@@ -220,7 +220,7 @@ def upload_page():
                 except Exception as e:
                     st.error(f"An error occurred while processing the file: {e}")
 
-        elif data_choice == "Use Oracle Data":
+        elif data_choice == "Use the Entire Oracle Data Table":
             try:
                 # Load data and data_expanded from GitHub repository
                 data_url = 'https://raw.githubusercontent.com/Romanos-Rizk/AUB-capstone/main/data/data_for_model.parquet'
